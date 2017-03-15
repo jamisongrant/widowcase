@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono|Droid+Serif|Francois+One|Neucha" rel="stylesheet"> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>Widow Case</title>
     <%= csrf_meta_tags %>
+
+    <meta name="keywords" content="<%= @seo_keywords %>" />
+
+    <%= favicon_link_tag 'favicons/thisone.ico' %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
-    <%= yield %>
+
+  <div class="navbar">
+    <div><%= link_to "Home", root_path %></div>
+    <div><%= link_to "About Us", root_path %></div>
+    <div><%= link_to "Contact the Band", root_path %></div>
+    <div><%= link_to "Widows Blog", root_path %></div>
+    <div><%= link_to "Event Calendar", root_path %></div>
+  </div>
+
+        <%= yield %>
   </body>
 </html>
+

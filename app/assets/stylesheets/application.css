@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  font-family: 'Droid Sans Mono', monospace;
+  text-align: center;
+  text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+
+html {
+  background: url('images/home_bg.jpg') no-repeat center center fixed; 
+  background-size: cover;
+}
