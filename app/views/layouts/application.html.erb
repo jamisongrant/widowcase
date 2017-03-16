@@ -17,14 +17,13 @@
   </head>
   <body>
 
-  <div class="navbar">
-    <div><%= link_to "Home", root_path %></div>
-    <div><%= link_to "About Us", root_path %></div>
-    <div><%= link_to "Contact the Band", root_path %></div>
-    <div><%= link_to "Widows Blog", root_path %></div>
-    <div><%= link_to "Event Calendar", root_path %></div>
-  </div>
-
+    <div class="navbar">
+      <div><%= link_to "Home", root_path %></div>
+      <div><%= link_to "About Us", about_us_path %></div>
+      <div><%= link_to "Contact the Band", contact_the_band_path %></div>
+      <div><%= link_to "Widows Blog", root_path %></div>
+      <div><%= link_to "Event Calendar", events_path %></div>
+    </div>
         <%= yield %>
   </body>
 </html>
