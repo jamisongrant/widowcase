@@ -7,5 +7,6 @@ Rails.application.routes.draw do
 
   get 'events', to: 'pages#calendar'
 
+  get 'merchandise', to: 'pages#merchandise'
 
 end
