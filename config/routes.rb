@@ -1,12 +1,6 @@
 Rails.application.routes.draw do
-  root to: 'pages#home'
-
-  get 'about-us', to: 'pages#about'
-
-  get 'contact-the-band', to: 'pages#contact'
-
-  get 'events', to: 'pages#calendar'
-
-  get 'merchandise', to: 'pages#merchandise'
-
+  resources :homepage
+  get "/:page" => "pages#show"
+  root to: "homepage#index"
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
